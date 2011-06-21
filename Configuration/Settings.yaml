@@ -1,0 +1,23 @@
+#                                                                        #
+# Settings Configuration for the RouteTester Package                     #
+#                                                                        #
+# $Id:$
+
+GenericBackporter:
+  targetPath: %FLOW3_PATH_DATA%Resources/Packages/GenericBackporter/Backport/
+  emptyTargetDirectory: false
+
+  sourcePackageKey: FLOW3
+  targetExtensionKey: extbase
+  classFiles:
+    enable: 1
+    replacePairs: []
+    includeFilePatterns: []
+    excludeFilePatterns: []
+    fileSpecificReplacePairs: []
+  testFiles:
+    enable: 0
+    replacePairs: []
+    includeFilePatterns: ['#^Tests/Unit/.*Test.php$#']
+    excludeFilePatterns: []
+    fileSpecificReplacePairs: []
